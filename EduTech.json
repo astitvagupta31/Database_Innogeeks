@@ -1,3 +1,6 @@
+// MONGODB ASSIGNMENT-3
+
+
 use EduTech
 
 db.admin.insertMany([
