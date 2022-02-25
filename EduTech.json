@@ -1,0 +1,76 @@
+use EduTech
+
+db.admin.insertMany([
+{
+    name : "Astitva",
+    email : "astitva31@gmail.com",
+    courses : [{
+        cname : "OS ",
+        sessions : 20,
+        assignment : 2
+    },
+    
+    {   cname : "DBMS ",
+        sessions : 21,
+        assignment : 3
+    }]
+},
+  {
+    name : "Nitin",
+    email : "nitin@gmail.com",
+    courses : [{
+        cname : "COA ",
+        sessions : 23,
+        assignment : 4
+    },
+    
+    {   cname : "ML",
+        sessions : 27,
+        assignment : 6
+    }]   
+      }
+      
+
+]
+)
+      
+db.admin.updateMany(
+     { 
+         name : "Nitin"
+     },
+     
+   {
+    $set : {email : "nitin50@gmail.com"}
+   }     
+)     
+   
+db.student.insertMany(
+       [
+          {
+              firstname : "Ram",
+              lastname  : "Sharma",
+              email : "ram35@gmail.com",
+              course : "OS"
+          },
+           {
+              firstname : "Shyam",
+              lastname  : "Gupta",
+              email : "shyam47@gmail.com",
+              course : "DBMS"
+          },
+           {
+              firstname : "Akash",
+              lastname  : "Singh",
+              email : "akash66@gmail.com",
+              course : "COA"
+          },
+           {
+              firstname : "Aditi",
+              lastname  : "Shah",
+              email : "aditi44@gmail.com",
+              course : "ML"
+          },
+          
+   
+       ]
+)   
